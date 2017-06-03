@@ -16,7 +16,13 @@ function enqueue(element) {
 
 //dequeue remove item at the front of the queue
 function dequeue(){
-  return this.dataStore.shift();
+  var priority = this.dataStore[0].code;
+  for (var i = 1; i < this.dataStore.length; i++) {
+    if(this.dataStore[i] < priority) {
+      priority = i;
+    }
+  }
+  return this.dataStore.splice(priority, 1);
 }
 
 //front() examine element at the fron of the queue
@@ -33,7 +39,7 @@ function back() {
 function toString() {
   var retStr = "";
   for (var i = 0; i < this.dataStore.length; i++) {
-    retStr += this.dataStore[i] + "\n";
+    retStr += "Code: " + this.dataStore[i].code + " for " + this.dataStore[i].name + "\n";
   }
   return retStr;
 }
