@@ -58,3 +58,10 @@ q.enqueue("Transmission fluid");
 q.enqueue("Side mirror");
 
 console.log(q.toString());
+
+q.dequeue();
+
+console.log(q.toString());
+
+console.log("Front of queue is: " + q.front());
+console.log("Back of queue is : " + q.back());
