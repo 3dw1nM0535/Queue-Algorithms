@@ -46,3 +46,15 @@ function empty() {
     return false;
   }
 }
+
+//test program
+var q = new Queue();
+q.enqueue("Car Window");
+q.enqueue("Window Tint");
+q.enqueue("Break fluids");
+q.enqueue("Car Jack");
+q.enqueue("Suspensions");
+q.enqueue("Transmission fluid");
+q.enqueue("Side mirror");
+
+console.log(q.toString());
