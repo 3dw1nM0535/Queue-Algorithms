@@ -79,8 +79,15 @@ var seen = ed.dequeue();
 console.log("Patient being treated: " + seen[0].name);
 console.log("Patient waiting to be treated: ");
 console.log(ed.toString());
+
 //another round
 var seen = ed.dequeue();
 console.log("Patient being treated: " + seen[0].name);
+console.log("Patient waiting to be treated: ");
+console.log(ed.toString());
+
+//another round
+var seen = ed.dequeue();
+console.log("Patient beibg treated: " + seen[0].name);
 console.log("Patient waiting to be treated: ");
 console.log(ed.toString());
