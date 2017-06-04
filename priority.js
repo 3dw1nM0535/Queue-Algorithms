@@ -25,7 +25,7 @@ function dequeue(){
   return this.dataStore.splice(priority, 1);
 }
 
-//front() examine element at the fron of the queue
+//front() examine element at the front of the queue
 function front() {
   return this.dataStore[0];
 }
